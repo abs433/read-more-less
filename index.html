@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read more & less
+    </title>
+    <style>
+        * {
+            text-align: center;
+            align-content: center;
+            
+        }
+
+        .buttn {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-size: 30px;
+            border-radius: 20px;
+            /* margin-left: 50px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center; display: flex; flex-direction: column;">
+    <h1>Abu bakar siddique CCO-2625048 <br>
+        Read more Less more </h1>
+
+    <br>
+    <div style="align-items: center; align-content: center;width: 40%;border: 1px solid; display: flex; text-align: center; align-self: center; width: 400px;">
+  
+    <div style="margin: 30px; font-size: 20px;width: 400px; ">
+        <h2 style="margin-top: 0px; margin-bottom: 0px;">Massage</h2>
+        <p id="para" style="text-align: justify; margin-bottom: 0px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sequi a totam quo ipsa neque hic, sed saepe
+            facere enim, asperiores rem exercitationem sunt quibusdam officia! Iste neque officiis sint! Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptates nemo quisquam incidunt accusamus totam harum vel!
+            Ea, nostrum. Sit placeat blanditiis perferendis. Reprehenderit consequuntur perferendis nobis et hic nihil
+            cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, obcaecati? Harum aliquid velit
+            aliquam dolorem officia placeat maxime eligendi soluta natus, possimus neque quo saepe architecto iusto
+            blanditiis sunt eveniet.</p>
+            <span id="para2" style="text-align: justify; display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sequi a
+                totam quo ipsa neque hic, sed saepe
+                facere enim, asperiores rem exercitationem sunt quibusdam officia! Iste neque officiis sint! Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Voluptates nemo quisquam incidunt accusamus totam harum vel!
+                Ea, nostrum. Sit placeat blanditiis perferendis. Reprehenderit consequuntur perferendis nobis et hic nihil
+                cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, obcaecati? Harum aliquid velit
+                aliquam dolorem officia placeat maxime eligendi soluta natus, possimus neque quo saepe architecto iusto
+                blanditiis sunt eveniet.</span>
+             <span>
+          
+                <a id="link1" style="display:;" href="#" onclick=" blub_on()">read more </a></span></p> 
+
+    </div> 
+</div>
+    <script>
+    var flag = true 
+        
+        function blub_on() {
+
+         if (flag == true) {
+             
+         
+                    var shww= document.getElementById("para2").style.display='block'
+                    console.log(shww);
+                document.getElementById('link1').innerHTML = 'Reade Less'
+            flag=false
+            
+            }else{
+
+             var shww = document.getElementById("para2").style.display = 'none'
+             console.log(shww);
+             document.getElementById('link1').innerHTML = 'Reade more'
+
+             flag = true
+            }
+            
+        }
+      
+    </script>
+</body>
+
+</html>
